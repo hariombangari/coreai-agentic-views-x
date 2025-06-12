@@ -5,7 +5,7 @@ import type { IHostData } from "../types";
 export interface WrappedComponentProps {
   incomingData?: { [key: string]: { data: Record<string, unknown>; source: string } };
   hostData?: IHostData;
-  sendOutput: (outputHandlerId: string, payload: Record<string, unknown>) => void;
+  sendOutput?: (outputHandlerId: string, payload: Record<string, unknown>) => void;
 }
 
 // Higher Order Component

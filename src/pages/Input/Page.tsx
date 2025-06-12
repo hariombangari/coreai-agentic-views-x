@@ -11,7 +11,7 @@ export function Input(props: WrappedComponentProps) {
   const agentInputSchema = agentNode?.input_schema;
 
   const handleSubmit = (values: Record<string, string>) => {
-    sendOutput("x1-input-handler-1", values);
+    sendOutput?.("x1-input-handler-1", values);
   };
 
   return (

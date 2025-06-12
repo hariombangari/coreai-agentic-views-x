@@ -1,8 +1,3 @@
-export enum ViewType {
-    Esm = "esm",
-    Iframe = "iframe",
-}
-
 export interface FormField {
     title?: string;
     type: string;
@@ -29,7 +24,7 @@ export interface ViewDisplay {
 }
 
 export interface ViewRendering {
-    type: ViewType;
+    type: "iframe";
     source: {
         url: string;
     };
