@@ -76,7 +76,7 @@ export function withHost<P extends WrappedComponentProps>(WrappedComponent: Reac
     return (
       <div ref={widgetRef}>
         <Script
-          src="https://unpkg.com/@psnext/block-sdk@0.0.26/dist/block-sdk.js"
+          src="https://unpkg.com/@psnext/block-sdk@0.0.27/dist/block-sdk.js"
           onLoad={onBlockSdkLoad}
         />
         <WrappedComponent
